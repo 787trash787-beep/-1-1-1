@@ -1,5 +1,5 @@
-# WARP subscription
-# Обновление: правка этого файла на GitHub → клиенты перечитывают тот же URL
+# WARP subscription — собрано build_warp.py из 56 конфигов
+# Правь confs/ и пересобирай; этот файл руками не редактируется.
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -12,63 +12,65 @@ profile:
 
 proxy-groups:
   - name: "🚀 Сервер"
-    type: select
+    type: fallback
     proxies:
       - "⚡️ Авто (быстрейший)"
-      - "WARP-01 🇵🇱 pl.tribukvy:4500"
-      - "WARP-02 🇩🇪 de.tribukvy:4500"
-      - "WARP-03 🇫🇮 fi.tribukvy:4500"
-      - "WARP-04 🇩🇪 de.tribukvy:4500"
-      - "WARP-05 🇵🇱 pl.tribukvy:4500"
-      - "WARP-06 🇩🇪 de.tribukvy:4500"
-      - "WARP-07 🇫🇮 fi.tribukvy:4500"
-      - "WARP-08 🇫🇮 fi.tribukvy:4500"
-      - "WARP-09 🇵🇱 pl.tribukvy:4500"
-      - "WARP-10 🇵🇱 pl.tribukvy:4500"
-      - "WARP-11 🇫🇮 fi.tribukvy:4500"
-      - "WARP-12 🇵🇱 pl.tribukvy:4500"
-      - "WARP-13 🇵🇱 pl.tribukvy:4500"
-      - "WARP-14 🇩🇪 de.tribukvy:4500"
-      - "WARP-15 🇫🇮 fi.tribukvy:4500"
-      - "WARP-16 🇵🇱 pl.tribukvy:4500"
-      - "WARP-17 🇵🇱 pl.tribukvy:4500"
-      - "WARP-18 🇩🇪 de.tribukvy:4500"
-      - "WARP-19 🇩🇪 de.tribukvy:4500"
-      - "WARP-20 🇵🇱 pl.tribukvy:4500"
-      - "WARP-21 🇩🇪 de.tribukvy:4500"
-      - "WARP-22 🇩🇪 de.tribukvy:4500"
-      - "WARP-23 🇩🇪 de.tribukvy:4500"
-      - "WARP-24 ☁️ engage:500"
-      - "WARP-25 ☁️ 162.159.195.1:500"
-      - "WARP-26 ☁️ 162.159.195.179:4500"
-      - "WARP-27 ☁️ engage:2408"
-      - "WARP-28 ☁️ 188.114.97.66:4500"
-      - "WARP-29 ☁️ 8.35.211.211:890"
-      - "WARP-30 ☁️ 188.114.98.32:1180"
-      - "WARP-31 ☁️ 8.39.204.116:894"
-      - "WARP-32 ☁️ 162.159.195.251:5956"
-      - "WARP-33 ☁️ engage:1387"
-      - "WARP-34 ☁️ 188.114.97.132:1074"
-      - "WARP-35 ☁️ 162.159.195.96:890"
-      - "WARP-36 ☁️ 188.114.96.125:4500"
-      - "WARP-37 ☁️ 8.39.125.59:1843"
-      - "WARP-38 ☁️ engage:2408"
-      - "WARP-39 ☁️ 162.159.195.1:500"
-      - "WARP-40 ☁️ 188.114.96.125:4500"
-      - "WARP-41 ☁️ 188.114.96.125:4500"
-      - "WARP-42 ☁️ 188.114.96.125:4500"
-      - "WARP-43 ☁️ 162.159.192.129:8854"
-      - "WARP-44 ☁️ engage:2408"
-      - "WARP-45 ☁️ 8.34.70.225:3476"
-      - "WARP-46 ☁️ 188.114.97.10:908"
-      - "WARP-47 ☁️ 8.39.125.144:1843"
-      - "WARP-48 ☁️ engage:987"
-      - "WARP-49 ☁️ 162.159.195.1:500"
-      - "WARP-50 ☁️ 188.114.97.176:908"
-      - "WARP-51 ☁️ 188.114.97.66:4500"
-      - "WARP-52 ☁️ engage:864"
-      - "WARP-53 ☁️ 162.159.195.232:864"
-      - "WARP-54 ☁️ 188.114.97.66:4500"
+      - "☁️ 8.47.69.52:4177"
+      - "🇩🇪 de.tribukvy:4500"
+      - "☁️ 188.114.97.66:4500"
+      - "☁️ engage:500"
+      - "☁️ 162.159.195.1:500"
+      - "☁️ 162.159.195.179:4500"
+      - "☁️ engage:2408"
+      - "🇵🇱 pl.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·2"
+      - "☁️ 188.114.97.66:4500 ·2"
+      - "🇫🇮 fi.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·2"
+      - "☁️ 8.35.211.211:890"
+      - "🇩🇪 de.tribukvy:4500 ·4"
+      - "☁️ 188.114.98.32:1180"
+      - "☁️ 8.39.204.116:894"
+      - "🇫🇮 fi.tribukvy:4500 ·2"
+      - "☁️ 162.159.195.251:5956"
+      - "☁️ engage:1387"
+      - "🇫🇮 fi.tribukvy:4500 ·3"
+      - "☁️ 188.114.97.132:1074"
+      - "☁️ 162.159.195.96:890"
+      - "🇵🇱 pl.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·4"
+      - "☁️ 188.114.96.125:4500"
+      - "☁️ 8.39.125.59:1843"
+      - "☁️ engage:2408 ·2"
+      - "🇫🇮 fi.tribukvy:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·5"
+      - "🇵🇱 pl.tribukvy:4500 ·6"
+      - "☁️ 162.159.195.1:500 ·2"
+      - "☁️ 188.114.96.125:4500 ·2"
+      - "🇩🇪 de.tribukvy:4500 ·5"
+      - "🇫🇮 fi.tribukvy:4500 ·5"
+      - "☁️ 188.114.96.125:4500 ·3"
+      - "☁️ 188.114.96.125:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·7"
+      - "🇵🇱 pl.tribukvy:4500 ·8"
+      - "🇩🇪 de.tribukvy:4500 ·6"
+      - "🇩🇪 de.tribukvy:4500 ·7"
+      - "☁️ 162.159.192.129:8854"
+      - "🇵🇱 pl.tribukvy:4500 ·9"
+      - "☁️ engage:2408 ·3"
+      - "🇩🇪 de.tribukvy:4500 ·8"
+      - "☁️ 8.34.70.225:3476"
+      - "☁️ 188.114.97.10:908"
+      - "☁️ 8.39.125.144:1843"
+      - "☁️ engage:987"
+      - "🇩🇪 de.tribukvy:4500 ·9"
+      - "☁️ 162.159.195.1:500 ·3"
+      - "☁️ 188.114.97.176:908"
+      - "☁️ 188.114.97.66:4500 ·3"
+      - "☁️ engage:864"
+      - "🇩🇪 de.tribukvy:4500 ·10"
+      - "☁️ 162.159.195.232:864"
       - DIRECT
 
   - name: "⚡️ Авто (быстрейший)"
@@ -78,60 +80,62 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "WARP-01 🇵🇱 pl.tribukvy:4500"
-      - "WARP-02 🇩🇪 de.tribukvy:4500"
-      - "WARP-03 🇫🇮 fi.tribukvy:4500"
-      - "WARP-04 🇩🇪 de.tribukvy:4500"
-      - "WARP-05 🇵🇱 pl.tribukvy:4500"
-      - "WARP-06 🇩🇪 de.tribukvy:4500"
-      - "WARP-07 🇫🇮 fi.tribukvy:4500"
-      - "WARP-08 🇫🇮 fi.tribukvy:4500"
-      - "WARP-09 🇵🇱 pl.tribukvy:4500"
-      - "WARP-10 🇵🇱 pl.tribukvy:4500"
-      - "WARP-11 🇫🇮 fi.tribukvy:4500"
-      - "WARP-12 🇵🇱 pl.tribukvy:4500"
-      - "WARP-13 🇵🇱 pl.tribukvy:4500"
-      - "WARP-14 🇩🇪 de.tribukvy:4500"
-      - "WARP-15 🇫🇮 fi.tribukvy:4500"
-      - "WARP-16 🇵🇱 pl.tribukvy:4500"
-      - "WARP-17 🇵🇱 pl.tribukvy:4500"
-      - "WARP-18 🇩🇪 de.tribukvy:4500"
-      - "WARP-19 🇩🇪 de.tribukvy:4500"
-      - "WARP-20 🇵🇱 pl.tribukvy:4500"
-      - "WARP-21 🇩🇪 de.tribukvy:4500"
-      - "WARP-22 🇩🇪 de.tribukvy:4500"
-      - "WARP-23 🇩🇪 de.tribukvy:4500"
-      - "WARP-24 ☁️ engage:500"
-      - "WARP-25 ☁️ 162.159.195.1:500"
-      - "WARP-26 ☁️ 162.159.195.179:4500"
-      - "WARP-27 ☁️ engage:2408"
-      - "WARP-28 ☁️ 188.114.97.66:4500"
-      - "WARP-29 ☁️ 8.35.211.211:890"
-      - "WARP-30 ☁️ 188.114.98.32:1180"
-      - "WARP-31 ☁️ 8.39.204.116:894"
-      - "WARP-32 ☁️ 162.159.195.251:5956"
-      - "WARP-33 ☁️ engage:1387"
-      - "WARP-34 ☁️ 188.114.97.132:1074"
-      - "WARP-35 ☁️ 162.159.195.96:890"
-      - "WARP-36 ☁️ 188.114.96.125:4500"
-      - "WARP-37 ☁️ 8.39.125.59:1843"
-      - "WARP-38 ☁️ engage:2408"
-      - "WARP-39 ☁️ 162.159.195.1:500"
-      - "WARP-40 ☁️ 188.114.96.125:4500"
-      - "WARP-41 ☁️ 188.114.96.125:4500"
-      - "WARP-42 ☁️ 188.114.96.125:4500"
-      - "WARP-43 ☁️ 162.159.192.129:8854"
-      - "WARP-44 ☁️ engage:2408"
-      - "WARP-45 ☁️ 8.34.70.225:3476"
-      - "WARP-46 ☁️ 188.114.97.10:908"
-      - "WARP-47 ☁️ 8.39.125.144:1843"
-      - "WARP-48 ☁️ engage:987"
-      - "WARP-49 ☁️ 162.159.195.1:500"
-      - "WARP-50 ☁️ 188.114.97.176:908"
-      - "WARP-51 ☁️ 188.114.97.66:4500"
-      - "WARP-52 ☁️ engage:864"
-      - "WARP-53 ☁️ 162.159.195.232:864"
-      - "WARP-54 ☁️ 188.114.97.66:4500"
+      - "☁️ 8.47.69.52:4177"
+      - "🇩🇪 de.tribukvy:4500"
+      - "☁️ 188.114.97.66:4500"
+      - "☁️ engage:500"
+      - "☁️ 162.159.195.1:500"
+      - "☁️ 162.159.195.179:4500"
+      - "☁️ engage:2408"
+      - "🇵🇱 pl.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·2"
+      - "☁️ 188.114.97.66:4500 ·2"
+      - "🇫🇮 fi.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·2"
+      - "☁️ 8.35.211.211:890"
+      - "🇩🇪 de.tribukvy:4500 ·4"
+      - "☁️ 188.114.98.32:1180"
+      - "☁️ 8.39.204.116:894"
+      - "🇫🇮 fi.tribukvy:4500 ·2"
+      - "☁️ 162.159.195.251:5956"
+      - "☁️ engage:1387"
+      - "🇫🇮 fi.tribukvy:4500 ·3"
+      - "☁️ 188.114.97.132:1074"
+      - "☁️ 162.159.195.96:890"
+      - "🇵🇱 pl.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·4"
+      - "☁️ 188.114.96.125:4500"
+      - "☁️ 8.39.125.59:1843"
+      - "☁️ engage:2408 ·2"
+      - "🇫🇮 fi.tribukvy:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·5"
+      - "🇵🇱 pl.tribukvy:4500 ·6"
+      - "☁️ 162.159.195.1:500 ·2"
+      - "☁️ 188.114.96.125:4500 ·2"
+      - "🇩🇪 de.tribukvy:4500 ·5"
+      - "🇫🇮 fi.tribukvy:4500 ·5"
+      - "☁️ 188.114.96.125:4500 ·3"
+      - "☁️ 188.114.96.125:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·7"
+      - "🇵🇱 pl.tribukvy:4500 ·8"
+      - "🇩🇪 de.tribukvy:4500 ·6"
+      - "🇩🇪 de.tribukvy:4500 ·7"
+      - "☁️ 162.159.192.129:8854"
+      - "🇵🇱 pl.tribukvy:4500 ·9"
+      - "☁️ engage:2408 ·3"
+      - "🇩🇪 de.tribukvy:4500 ·8"
+      - "☁️ 8.34.70.225:3476"
+      - "☁️ 188.114.97.10:908"
+      - "☁️ 8.39.125.144:1843"
+      - "☁️ engage:987"
+      - "🇩🇪 de.tribukvy:4500 ·9"
+      - "☁️ 162.159.195.1:500 ·3"
+      - "☁️ 188.114.97.176:908"
+      - "☁️ 188.114.97.66:4500 ·3"
+      - "☁️ engage:864"
+      - "🇩🇪 de.tribukvy:4500 ·10"
+      - "☁️ 162.159.195.232:864"
 
   - name: "📊 Тест всех"
     type: url-test
@@ -140,925 +144,112 @@ proxy-groups:
     tolerance: 0
     lazy: true
     proxies:
-      - "WARP-01 🇵🇱 pl.tribukvy:4500"
-      - "WARP-02 🇩🇪 de.tribukvy:4500"
-      - "WARP-03 🇫🇮 fi.tribukvy:4500"
-      - "WARP-04 🇩🇪 de.tribukvy:4500"
-      - "WARP-05 🇵🇱 pl.tribukvy:4500"
-      - "WARP-06 🇩🇪 de.tribukvy:4500"
-      - "WARP-07 🇫🇮 fi.tribukvy:4500"
-      - "WARP-08 🇫🇮 fi.tribukvy:4500"
-      - "WARP-09 🇵🇱 pl.tribukvy:4500"
-      - "WARP-10 🇵🇱 pl.tribukvy:4500"
-      - "WARP-11 🇫🇮 fi.tribukvy:4500"
-      - "WARP-12 🇵🇱 pl.tribukvy:4500"
-      - "WARP-13 🇵🇱 pl.tribukvy:4500"
-      - "WARP-14 🇩🇪 de.tribukvy:4500"
-      - "WARP-15 🇫🇮 fi.tribukvy:4500"
-      - "WARP-16 🇵🇱 pl.tribukvy:4500"
-      - "WARP-17 🇵🇱 pl.tribukvy:4500"
-      - "WARP-18 🇩🇪 de.tribukvy:4500"
-      - "WARP-19 🇩🇪 de.tribukvy:4500"
-      - "WARP-20 🇵🇱 pl.tribukvy:4500"
-      - "WARP-21 🇩🇪 de.tribukvy:4500"
-      - "WARP-22 🇩🇪 de.tribukvy:4500"
-      - "WARP-23 🇩🇪 de.tribukvy:4500"
-      - "WARP-24 ☁️ engage:500"
-      - "WARP-25 ☁️ 162.159.195.1:500"
-      - "WARP-26 ☁️ 162.159.195.179:4500"
-      - "WARP-27 ☁️ engage:2408"
-      - "WARP-28 ☁️ 188.114.97.66:4500"
-      - "WARP-29 ☁️ 8.35.211.211:890"
-      - "WARP-30 ☁️ 188.114.98.32:1180"
-      - "WARP-31 ☁️ 8.39.204.116:894"
-      - "WARP-32 ☁️ 162.159.195.251:5956"
-      - "WARP-33 ☁️ engage:1387"
-      - "WARP-34 ☁️ 188.114.97.132:1074"
-      - "WARP-35 ☁️ 162.159.195.96:890"
-      - "WARP-36 ☁️ 188.114.96.125:4500"
-      - "WARP-37 ☁️ 8.39.125.59:1843"
-      - "WARP-38 ☁️ engage:2408"
-      - "WARP-39 ☁️ 162.159.195.1:500"
-      - "WARP-40 ☁️ 188.114.96.125:4500"
-      - "WARP-41 ☁️ 188.114.96.125:4500"
-      - "WARP-42 ☁️ 188.114.96.125:4500"
-      - "WARP-43 ☁️ 162.159.192.129:8854"
-      - "WARP-44 ☁️ engage:2408"
-      - "WARP-45 ☁️ 8.34.70.225:3476"
-      - "WARP-46 ☁️ 188.114.97.10:908"
-      - "WARP-47 ☁️ 8.39.125.144:1843"
-      - "WARP-48 ☁️ engage:987"
-      - "WARP-49 ☁️ 162.159.195.1:500"
-      - "WARP-50 ☁️ 188.114.97.176:908"
-      - "WARP-51 ☁️ 188.114.97.66:4500"
-      - "WARP-52 ☁️ engage:864"
-      - "WARP-53 ☁️ 162.159.195.232:864"
-      - "WARP-54 ☁️ 188.114.97.66:4500"
+      - "☁️ 8.47.69.52:4177"
+      - "🇩🇪 de.tribukvy:4500"
+      - "☁️ 188.114.97.66:4500"
+      - "☁️ engage:500"
+      - "☁️ 162.159.195.1:500"
+      - "☁️ 162.159.195.179:4500"
+      - "☁️ engage:2408"
+      - "🇵🇱 pl.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·2"
+      - "☁️ 188.114.97.66:4500 ·2"
+      - "🇫🇮 fi.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·2"
+      - "☁️ 8.35.211.211:890"
+      - "🇩🇪 de.tribukvy:4500 ·4"
+      - "☁️ 188.114.98.32:1180"
+      - "☁️ 8.39.204.116:894"
+      - "🇫🇮 fi.tribukvy:4500 ·2"
+      - "☁️ 162.159.195.251:5956"
+      - "☁️ engage:1387"
+      - "🇫🇮 fi.tribukvy:4500 ·3"
+      - "☁️ 188.114.97.132:1074"
+      - "☁️ 162.159.195.96:890"
+      - "🇵🇱 pl.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·4"
+      - "☁️ 188.114.96.125:4500"
+      - "☁️ 8.39.125.59:1843"
+      - "☁️ engage:2408 ·2"
+      - "🇫🇮 fi.tribukvy:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·5"
+      - "🇵🇱 pl.tribukvy:4500 ·6"
+      - "☁️ 162.159.195.1:500 ·2"
+      - "☁️ 188.114.96.125:4500 ·2"
+      - "🇩🇪 de.tribukvy:4500 ·5"
+      - "🇫🇮 fi.tribukvy:4500 ·5"
+      - "☁️ 188.114.96.125:4500 ·3"
+      - "☁️ 188.114.96.125:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·7"
+      - "🇵🇱 pl.tribukvy:4500 ·8"
+      - "🇩🇪 de.tribukvy:4500 ·6"
+      - "🇩🇪 de.tribukvy:4500 ·7"
+      - "☁️ 162.159.192.129:8854"
+      - "🇵🇱 pl.tribukvy:4500 ·9"
+      - "☁️ engage:2408 ·3"
+      - "🇩🇪 de.tribukvy:4500 ·8"
+      - "☁️ 8.34.70.225:3476"
+      - "☁️ 188.114.97.10:908"
+      - "☁️ 8.39.125.144:1843"
+      - "☁️ engage:987"
+      - "🇩🇪 de.tribukvy:4500 ·9"
+      - "☁️ 162.159.195.1:500 ·3"
+      - "☁️ 188.114.97.176:908"
+      - "☁️ 188.114.97.66:4500 ·3"
+      - "☁️ engage:864"
+      - "🇩🇪 de.tribukvy:4500 ·10"
+      - "☁️ 162.159.195.232:864"
 
 rules:
   - MATCH,🚀 Сервер
 
 proxies:
-  - name: "WARP-01 🇵🇱 pl.tribukvy:4500"
+  - name: "☁️ 8.47.69.52:4177"
     type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "wEoupwzMV+hyu1aGvXJrtgemGLGP5aI5TqILp5pN+2Y="
+    server: 8.47.69.52
+    port: 4177
+    private-key: "QMryU5SKWMrTA8t+Zalj5yZoGbqeBMLkf0dO+etlt1A="
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     udp: true
     ip: 172.16.0.2
-    ipv6: 2606:4700:110:8655:19c3:e382:79cc:e5f6
+    ipv6: 2606:4700:110:88a1:5398:e4b7:db27:4526
     allowed-ips:
       - '0.0.0.0/0'
       - '::/0'
     mtu: 1280
     persistent-keepalive: 25
-    amnezia-wg-option: &awg
-     s1: 0
-     s2: 0
-     jc: 4
-     jmin: 40
-     jmax: 70
-     h1: 1
-     h2: 2
-     h3: 3
-     h4: 4
-     i1: "<b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>"
+    amnezia-wg-option: &awg1
+      s1: 0
+      s2: 0
+      s3: 0
+      s4: 0
+      jc: 4
+      jmin: 40
+      jmax: 70
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+      i1: <b 0xc10000000114367096bb0fb3f58f3a3fb8aaacd61d63a1c8a40e14f7374b8a62dccba6431716c3abf6f5afbcfb39bd008000047c32e268567c652e6f4db58bff759bc8c5aaca183b87cb4d22938fe7d8dca22a679a79e4d9ee62e4bbb3a380dd78d4e8e48f26b38a1d42d76b371a5a9a0444827a69d1ab5872a85749f65a4104e931740b4dc1e2dd77733fc7fac4f93011cd622f2bb47e85f71992e2d585f8dc765a7a12ddeb879746a267393ad023d267c4bd79f258703e27345155268bd3cc0506ebd72e2e3c6b5b0f005299cd94b67ddabe30389c4f9b5c2d512dcc298c14f14e9b7f931e1dc397926c31fbb7cebfc668349c218672501031ecce151d4cb03c4c660b6c6fe7754e75446cd7de09a8c81030c5f6fb377203f551864f3d83e27de7b86499736cbbb549b2f37f436db1cae0a4ea39930f0534aacdd1e3534bc87877e2afabe959ced261f228d6362e6fd277c88c312d966c8b9f67e4a92e757773db0b0862fb8108d1d8fa262a40a1b4171961f0704c8ba314da2482ac8ed9bd28d4b50f7432d89fd800c25a50c5e2f5c0710544fef5273401116aa0572366d8e49ad758fcb29e6a92912e644dbe227c247cb3417eabfab2db16796b2fba420de3b1dc94e8361f1f324a331ddaf1e626553138860757fd0bf687566108b77b70fb9f8f8962eca599c4a70ed373666961a8cb506b96756d9e28b94122b20f16b54f118c0e603ce0b831efea614ad836df6cf9affbdd09596412547496967da758cec9080295d853b0861670b71d9abde0d562b1a6de82782a5b0c14d297f27283a895abc889a5f6703f0e6eb95f67b2da45f150d0d8ab805612d570c2d5cb6997ac3a7756226c2f5c8982ffbd480c5004b0660a3c9468945efde90864019a2b519458724b55d766e16b0da25c0557c01f3c11ddeb024b62e303640e17fdd57dedb3aeb4a2c1b7c93059f9c1d7118d77caac1cd0f6556e46cbc991c1bb16970273dea833d01e5090d061a0c6d25af2415cd2878af97f6d0e7f1f936247b394ecb9bd484da6be936dee9b0b92dc90101a1b4295e97a9772f2263eb09431995aa173df4ca2abd687d87706f0f93eaa5e13cbe3b574fa3cfe94502ace25265778da6960d561381769c24e0cbd7aac73c16f95ae74ff7ec38124f7c722b9cb151d4b6841343f29be8f35145e1b27021056820fed77003df8554b4155716c8cf6049ef5e318481460a8ce3be7c7bfac695255be84dc491c19e9dedc449dd3471728cd2a3ee51324ccb3eef121e3e08f8e18f0006ea8957371d9f2f739f0b89e4db11e5c6430ada61572e589519fbad4498b460ce6e4407fc2d8f2dd4293a50a0cb8fcaaf35cd9a8cc097e3603fbfa08d9036f52b3e7fcce11b83ad28a4ac12dba0395a0cc871cefd1a2856fffb3f28d82ce35cf80579974778bab13d9b3578d8c75a2d196087a2cd439aff2bb33f2db24ac175fff4ed91d36a4cdbfaf3f83074f03894ea40f17034629890da3efdbb41141b38368ab532209b69f057ddc559c19bc8ae62bf3fd564c9a35d9a83d14a95834a92bae6d9a29ae5e8ece07910d16433e4c6230c9bd7d68b47de0de9843988af6dc88b5301820443bd4d0537778bf6b4c1dd067fcf14b81015f2a67c7f2a28f9cb7e0684d3cb4b1c24d9b343122a086611b489532f1c3a26779da1706c6759d96d8ab>
 
-
-  - name: "WARP-02 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "eDh30jgVms+R2mzL5yJAcNBJ0Biup0xXIOUlO8F+jW4="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8788:b203:76d4:607a:fab
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-03 🇫🇮 fi.tribukvy:4500"
-    type: wireguard
-    server: tel.fi.tribukvy.ltd
-    port: 4500
-    private-key: "GNhXFjBJYWExy/m1G1XdVrsSksS1pX5zjF33eOfl9FM="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8453:69b2:3ad2:77fb:97e4
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-04 🇩🇪 de.tribukvy:4500"
+  - name: "🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
-    private-key: "UK9H9xmwIHMs4zTLysof4JiB8pRpUaCRwNUyUEuKGVY="
+    private-key: "UFl4c1JlyQ4jQ6tjyDGODCXfLdbw+uhmiVJ4MLNLGEM="
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     udp: true
     ip: 172.16.0.2
-    ipv6: 2606:4700:110:8b26:7fdb:f0cf:add7:b489
+    ipv6: 2606:4700:110:8181:4591:7352:9c7a:7f30
     allowed-ips:
       - '0.0.0.0/0'
       - '::/0'
     mtu: 1280
     persistent-keepalive: 25
-    amnezia-wg-option: *awg
+    amnezia-wg-option: *awg1
 
-  - name: "WARP-05 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "SKIQMhS74gtW6omHx5WPTv8qLF5SaitByrZzysqYEm8="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8704:16ce:f4ce:84e8:7b52
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-06 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "WPzoQFroPd8ISlSGcvnm0GWU7BsODyAUqeDwulPBOEk="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8a75:bd7a:e77b:c49:69fb
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-07 🇫🇮 fi.tribukvy:4500"
-    type: wireguard
-    server: tel.fi.tribukvy.ltd
-    port: 4500
-    private-key: "ILFJVMvnOJtGww5uMGOAzRLM5/NGxa5NX9V/xtrgcW4="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8983:ef01:37ce:3d38:b17c
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-08 🇫🇮 fi.tribukvy:4500"
-    type: wireguard
-    server: tel.fi.tribukvy.ltd
-    port: 4500
-    private-key: "GIch5FHeEfAFLWDcJ9o6YVmuDai6dswv4S4LpuWsLFk="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8770:fc97:f254:ba0a:b862
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-09 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "OJdr4bnNjCWkqW3H+JDY2qQj2BFQA9y9JuPDZOtRY0M="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8402:3a6d:4e21:58c2:59bc
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-10 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "MP6pWpoDM5tDxIqIw99pD8JDmzR8yIeEMjQNxW/cKF0="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8b95:4681:dc03:6e93:acf9
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-11 🇫🇮 fi.tribukvy:4500"
-    type: wireguard
-    server: tel.fi.tribukvy.ltd
-    port: 4500
-    private-key: "4KKDz8+CEXNmEQnhGeF7x96/n1hKKnt0S2N0Fp3sVmw="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8d6d:c98:c3d6:8b12:b265
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-12 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "GGPCIsq3V3PSztsbfSGwRw329tMfYffDkPQkXJuwdGk="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:822f:a5ff:616b:6d86:c3ca
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-13 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "QJhUrt1+8fjnn2DIuZNVvl1THBORU/w+BOs7Uy2YU3M="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8b2c:8e74:c80:8afe:6f19
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-14 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "oCcKaqjJpMJagGBgj9h4YyOKnq4EHM1eF2phztJ3R0w="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8275:db2f:7a29:4b0b:3fd8
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-15 🇫🇮 fi.tribukvy:4500"
-    type: wireguard
-    server: tel.fi.tribukvy.ltd
-    port: 4500
-    private-key: "0Je/Ga3MVpMp7ZBkC5nXQNJo8P3PTiepYyL4E98pe1o="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8abf:5ec1:bb96:932a:8579
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-16 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "CChk7Ux+JzLHeXV1+oTfGadBODNNuUptclirhgQJH1Q="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:83d7:333b:8c06:9e8f:ae4f
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-17 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "mEMVY5rDp+Q6H6he3zrr5taORfIDJBAC1TC+tx+gA30="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8fd1:bb32:ad92:79a7:9f63
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-18 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "iFEtyxzIaS0CAaOotiv9+WLX/2+4epM3TZJ/IiN9KXQ="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87e7:2539:808f:c080:10c5
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-19 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "CHMUgNE5//nbERwyFpxswtQ1QXAMxYkoAljFNyT3kGc="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:82b4:fda9:1629:14d2:7133
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-20 🇵🇱 pl.tribukvy:4500"
-    type: wireguard
-    server: tel.pl.tribukvy.ltd
-    port: 4500
-    private-key: "oCcJcZxaiA255nmsBZKyZjRyI0HhqvazK7h2Nyl92H4="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8104:b03d:7817:986e:8c5e
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-21 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "QLxouE5WGuDrHKw/VWSURyB+cxvNCpYHN179crDmj1Y="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8eb2:db79:f2b4:f4df:4c1c
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-22 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "eJDKBTlMyy3XuPKn+NApG4Y2CMYtmTr5LojcQDIumks="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:843a:bb73:f8d4:21a0:9e80
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-23 🇩🇪 de.tribukvy:4500"
-    type: wireguard
-    server: tel.de.tribukvy.ltd
-    port: 4500
-    private-key: "yN6kDCuxRoLtLNkvJZf7DLyGgdodev/TPUhWUhJcPWU="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8abe:3cc9:84ac:51c8:6fde
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-24 ☁️ engage:500"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 500
-    private-key: "cMXLsSOxiPJTKGlqhTI/F48XiPJOdRqCS5TB3xSgnVU="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8158:7d25:87f2:9b2a:413e
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-25 ☁️ 162.159.195.1:500"
-    type: wireguard
-    server: 162.159.195.1
-    port: 500
-    private-key: "cELAL/9F9gEIoOOsfjvviysU45tiPOAaIJ9EaVRNK2Y="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8b5d:c190:aa0f:245e:7e4c
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-26 ☁️ 162.159.195.179:4500"
-    type: wireguard
-    server: 162.159.195.179
-    port: 4500
-    private-key: "4I9jWHZS40LQFJg7hWuczo5YsRFQypv0SDtL5MVOW2U="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8401:a3a1:3161:c3c0:f25d
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-27 ☁️ engage:2408"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 2408
-    private-key: "qIdRcgbpYhxh88so+spNMF12Beh+F08tjhS8UOqUPnE="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8f85:9e1f:13dd:bf07:13d6
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-28 ☁️ 188.114.97.66:4500"
-    type: wireguard
-    server: 188.114.97.66
-    port: 4500
-    private-key: "gIXhXoVT8OiX6cFI+8L8B/t1m2jEJccyGuLcwrh/1EQ="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:85e2:62a4:a8b3:d52d:e5b2
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-29 ☁️ 8.35.211.211:890"
-    type: wireguard
-    server: 8.35.211.211
-    port: 890
-    private-key: "SFVvFtsXPpISwd1YS4gm+3rjSa11jOHGEyRGPbqzl1M="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8b05:a1e0:ee00:11be:80a2
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-30 ☁️ 188.114.98.32:1180"
-    type: wireguard
-    server: 188.114.98.32
-    port: 1180
-    private-key: "+NpEERsIzzsSw1JObbZKWHQOwGRQRKwEBDAQRJzMiVY="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8438:91fd:8b01:b8fc:aded
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-31 ☁️ 8.39.204.116:894"
-    type: wireguard
-    server: 8.39.204.116
-    port: 894
-    private-key: "2BqsnDPOMO4Nm1hCImvkODT0uYjKOBHn1DxMg4r8CHo="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8d69:2551:b0ab:87a5:4358
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-32 ☁️ 162.159.195.251:5956"
-    type: wireguard
-    server: 162.159.195.251
-    port: 5956
-    private-key: "APNgHIWy/PZmQS0kwwA4FM+ZmYzqmRmYVoog1K8ezmA="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8347:c954:f8ee:bfd5:bffd
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-33 ☁️ engage:1387"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 1387
-    private-key: "sMDD5F0jkOawqaIgdZPI9EDL9G/fFyb9Fjoj3jo/OmU="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8a4a:fb3c:109e:b1a8:99ba
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-34 ☁️ 188.114.97.132:1074"
-    type: wireguard
-    server: 188.114.97.132
-    port: 1074
-    private-key: "6B2qUdYfvaCixLtZPeZf7GswzNM1jw9n3qvKbgM4BVA="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8c4e:3d95:ce41:1b48:1490
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-35 ☁️ 162.159.195.96:890"
-    type: wireguard
-    server: 162.159.195.96
-    port: 890
-    private-key: "IKEyTSE22mLzgPJbfWtKESXk0kboihlZr5+6VX2A/nc="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:85bd:7e7e:8c4c:c0c7:b4f4
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-36 ☁️ 188.114.96.125:4500"
-    type: wireguard
-    server: 188.114.96.125
-    port: 4500
-    private-key: "IPMF4mtAdYEEqM9wDtPW8GTomenyS7ysfu4gdLW0x2g="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8047:f22c:e095:ad05:71a2
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-37 ☁️ 8.39.125.59:1843"
-    type: wireguard
-    server: 8.39.125.59
-    port: 1843
-    private-key: "WDUf5T65Oo00ofeGz7T9D4KYPkGp0Le8fe3cGJ/E8U4="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8fbd:d0ac:adea:802b:351
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-38 ☁️ engage:2408"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 2408
-    private-key: "wDe4mOoxeWp5fgQeMaXrfB0mZbjdfF+6dv+jvMY6lUQ="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8a8c:85b3:98f9:df22:219d
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-39 ☁️ 162.159.195.1:500"
-    type: wireguard
-    server: 162.159.195.1
-    port: 500
-    private-key: "QFUElwrCTie82ynNAHorJdMLRSuyLShuBO+gfBXbKUM="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8827:14a9:a1c3:a12a:b20f
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-40 ☁️ 188.114.96.125:4500"
-    type: wireguard
-    server: 188.114.96.125
-    port: 4500
-    private-key: "OOdmH3tJXh2+y8VthIIhJjA+XwBP2yNmKnqbYVzIGl0="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:89b5:1613:36f8:67fd:faa3
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-41 ☁️ 188.114.96.125:4500"
-    type: wireguard
-    server: 188.114.96.125
-    port: 4500
-    private-key: "uAxjUf8LCkatI6NeF9PIaFaqhfbRdHXFm2c79DLUEUY="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:800c:6a6c:d50f:d647:d7b8
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-42 ☁️ 188.114.96.125:4500"
-    type: wireguard
-    server: 188.114.96.125
-    port: 4500
-    private-key: "SAq11s5yaNavN58rUSWemyeyzyqyZqR0PlCcYfFRrV0="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8689:2fb7:b56b:6c5d:7e51
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-43 ☁️ 162.159.192.129:8854"
-    type: wireguard
-    server: 162.159.192.129
-    port: 8854
-    private-key: "SOsxJ37ksoKkoRGPcUzsLDrOTwipw2Ti4ygB9eNYX0g="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8a5c:6a8b:4f6e:a613:53ac
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-44 ☁️ engage:2408"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 2408
-    private-key: "0I0NryGggag2WQQLfmZpIk4NdA7uPx2K+unrOD/B4nw="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8f72:4bb0:e0db:4c8d:892e
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-45 ☁️ 8.34.70.225:3476"
-    type: wireguard
-    server: 8.34.70.225
-    port: 3476
-    private-key: "ANPIo83DHy7gJ5bTiCROHRro4n2KU0x5WSWcQuLxD30="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8e5d:739d:89c2:dc7c:aac8
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-46 ☁️ 188.114.97.10:908"
-    type: wireguard
-    server: 188.114.97.10
-    port: 908
-    private-key: "ELpCVcKIwHVsBfYGecxfyzCZb8cZZk3SRBSnY0s4elM="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8fc7:fca3:29ac:e2e7:edf3
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-47 ☁️ 8.39.125.144:1843"
-    type: wireguard
-    server: 8.39.125.144
-    port: 1843
-    private-key: "4O/AIKzUc8o8wdD8KylY7rt+eSbsuDohuDSQwXhN4VM="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:803a:1450:9a34:41b7:967f
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-48 ☁️ engage:987"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 987
-    private-key: "kHtkJW71k0cITF/GR8UniNWc3Bp5DLqUsPRftqFwTHc="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8ff8:68c0:9a8d:a54e:b988
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-49 ☁️ 162.159.195.1:500"
-    type: wireguard
-    server: 162.159.195.1
-    port: 500
-    private-key: "eFsaICp7j8I8X8HLl6CxVPG06fhXeNmoLBWYPmTLq1c="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8e92:e939:a131:b3f:b8a0
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-50 ☁️ 188.114.97.176:908"
-    type: wireguard
-    server: 188.114.97.176
-    port: 908
-    private-key: "qFU/+G/U7bGklvIHspUWfF/lqyGcZrm4fXxe0f9asFY="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:8c75:fb77:ae1c:cf11:391d
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-51 ☁️ 188.114.97.66:4500"
-    type: wireguard
-    server: 188.114.97.66
-    port: 4500
-    private-key: "4M51/VygwcepSxyuj/0nqcCtAe4E5kbiLko4K1B0Ak4="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:89b8:baeb:3423:c52:e703
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-52 ☁️ engage:864"
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 864
-    private-key: "SNLzVKzEhLnWuf+JLb1HrLaAWDhupi19SRzGRi9OT1M="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:85f7:c131:9492:9dd0:242f
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-53 ☁️ 162.159.195.232:864"
-    type: wireguard
-    server: 162.159.195.232
-    port: 864
-    private-key: "iAoJnsagygEH1h8gkKt52h0gewQDqKW/1s/VYPZHFWE="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    udp: true
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:82e0:8212:c28e:a323:7972
-    allowed-ips:
-      - '0.0.0.0/0'
-      - '::/0'
-    mtu: 1280
-    persistent-keepalive: 25
-    amnezia-wg-option: *awg
-
-  - name: "WARP-54 ☁️ 188.114.97.66:4500"
+  - name: "☁️ 188.114.97.66:4500"
     type: wireguard
     server: 188.114.97.66
     port: 4500
@@ -1072,5 +263,865 @@ proxies:
       - '::/0'
     mtu: 1280
     persistent-keepalive: 25
-    amnezia-wg-option: *awg
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ engage:500"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 500
+    private-key: "cMXLsSOxiPJTKGlqhTI/F48XiPJOdRqCS5TB3xSgnVU="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8158:7d25:87f2:9b2a:413e
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 162.159.195.1:500"
+    type: wireguard
+    server: 162.159.195.1
+    port: 500
+    private-key: "cELAL/9F9gEIoOOsfjvviysU45tiPOAaIJ9EaVRNK2Y="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8b5d:c190:aa0f:245e:7e4c
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: &awg2
+      s1: 0
+      s2: 0
+      s3: 0
+      s4: 0
+      jc: 4
+      jmin: 40
+      jmax: 70
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
+      i1: <b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>
+
+  - name: "☁️ 162.159.195.179:4500"
+    type: wireguard
+    server: 162.159.195.179
+    port: 4500
+    private-key: "4I9jWHZS40LQFJg7hWuczo5YsRFQypv0SDtL5MVOW2U="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8401:a3a1:3161:c3c0:f25d
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ engage:2408"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    private-key: "qIdRcgbpYhxh88so+spNMF12Beh+F08tjhS8UOqUPnE="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8f85:9e1f:13dd:bf07:13d6
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "wEoupwzMV+hyu1aGvXJrtgemGLGP5aI5TqILp5pN+2Y="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8655:19c3:e382:79cc:e5f6
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·2"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "eDh30jgVms+R2mzL5yJAcNBJ0Biup0xXIOUlO8F+jW4="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8788:b203:76d4:607a:fab
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 188.114.97.66:4500 ·2"
+    type: wireguard
+    server: 188.114.97.66
+    port: 4500
+    private-key: "gIXhXoVT8OiX6cFI+8L8B/t1m2jEJccyGuLcwrh/1EQ="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:85e2:62a4:a8b3:d52d:e5b2
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇫🇮 fi.tribukvy:4500"
+    type: wireguard
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+    private-key: "GNhXFjBJYWExy/m1G1XdVrsSksS1pX5zjF33eOfl9FM="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8453:69b2:3ad2:77fb:97e4
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·3"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "UK9H9xmwIHMs4zTLysof4JiB8pRpUaCRwNUyUEuKGVY="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8b26:7fdb:f0cf:add7:b489
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·2"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "SKIQMhS74gtW6omHx5WPTv8qLF5SaitByrZzysqYEm8="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8704:16ce:f4ce:84e8:7b52
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 8.35.211.211:890"
+    type: wireguard
+    server: 8.35.211.211
+    port: 890
+    private-key: "SFVvFtsXPpISwd1YS4gm+3rjSa11jOHGEyRGPbqzl1M="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8b05:a1e0:ee00:11be:80a2
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇩🇪 de.tribukvy:4500 ·4"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "WPzoQFroPd8ISlSGcvnm0GWU7BsODyAUqeDwulPBOEk="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8a75:bd7a:e77b:c49:69fb
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.98.32:1180"
+    type: wireguard
+    server: 188.114.98.32
+    port: 1180
+    private-key: "+NpEERsIzzsSw1JObbZKWHQOwGRQRKwEBDAQRJzMiVY="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8438:91fd:8b01:b8fc:aded
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 8.39.204.116:894"
+    type: wireguard
+    server: 8.39.204.116
+    port: 894
+    private-key: "2BqsnDPOMO4Nm1hCImvkODT0uYjKOBHn1DxMg4r8CHo="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8d69:2551:b0ab:87a5:4358
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇫🇮 fi.tribukvy:4500 ·2"
+    type: wireguard
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+    private-key: "ILFJVMvnOJtGww5uMGOAzRLM5/NGxa5NX9V/xtrgcW4="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8983:ef01:37ce:3d38:b17c
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 162.159.195.251:5956"
+    type: wireguard
+    server: 162.159.195.251
+    port: 5956
+    private-key: "APNgHIWy/PZmQS0kwwA4FM+ZmYzqmRmYVoog1K8ezmA="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8347:c954:f8ee:bfd5:bffd
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ engage:1387"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1387
+    private-key: "sMDD5F0jkOawqaIgdZPI9EDL9G/fFyb9Fjoj3jo/OmU="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8a4a:fb3c:109e:b1a8:99ba
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇫🇮 fi.tribukvy:4500 ·3"
+    type: wireguard
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+    private-key: "GIch5FHeEfAFLWDcJ9o6YVmuDai6dswv4S4LpuWsLFk="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8770:fc97:f254:ba0a:b862
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.97.132:1074"
+    type: wireguard
+    server: 188.114.97.132
+    port: 1074
+    private-key: "6B2qUdYfvaCixLtZPeZf7GswzNM1jw9n3qvKbgM4BVA="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8c4e:3d95:ce41:1b48:1490
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 162.159.195.96:890"
+    type: wireguard
+    server: 162.159.195.96
+    port: 890
+    private-key: "IKEyTSE22mLzgPJbfWtKESXk0kboihlZr5+6VX2A/nc="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:85bd:7e7e:8c4c:c0c7:b4f4
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·3"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "OJdr4bnNjCWkqW3H+JDY2qQj2BFQA9y9JuPDZOtRY0M="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8402:3a6d:4e21:58c2:59bc
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·4"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "MP6pWpoDM5tDxIqIw99pD8JDmzR8yIeEMjQNxW/cKF0="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8b95:4681:dc03:6e93:acf9
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 188.114.96.125:4500"
+    type: wireguard
+    server: 188.114.96.125
+    port: 4500
+    private-key: "IPMF4mtAdYEEqM9wDtPW8GTomenyS7ysfu4gdLW0x2g="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8047:f22c:e095:ad05:71a2
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 8.39.125.59:1843"
+    type: wireguard
+    server: 8.39.125.59
+    port: 1843
+    private-key: "WDUf5T65Oo00ofeGz7T9D4KYPkGp0Le8fe3cGJ/E8U4="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8fbd:d0ac:adea:802b:351
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ engage:2408 ·2"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    private-key: "wDe4mOoxeWp5fgQeMaXrfB0mZbjdfF+6dv+jvMY6lUQ="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8a8c:85b3:98f9:df22:219d
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇫🇮 fi.tribukvy:4500 ·4"
+    type: wireguard
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+    private-key: "4KKDz8+CEXNmEQnhGeF7x96/n1hKKnt0S2N0Fp3sVmw="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8d6d:c98:c3d6:8b12:b265
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·5"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "GGPCIsq3V3PSztsbfSGwRw329tMfYffDkPQkXJuwdGk="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:822f:a5ff:616b:6d86:c3ca
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·6"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "QJhUrt1+8fjnn2DIuZNVvl1THBORU/w+BOs7Uy2YU3M="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8b2c:8e74:c80:8afe:6f19
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 162.159.195.1:500 ·2"
+    type: wireguard
+    server: 162.159.195.1
+    port: 500
+    private-key: "QFUElwrCTie82ynNAHorJdMLRSuyLShuBO+gfBXbKUM="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8827:14a9:a1c3:a12a:b20f
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.96.125:4500 ·2"
+    type: wireguard
+    server: 188.114.96.125
+    port: 4500
+    private-key: "OOdmH3tJXh2+y8VthIIhJjA+XwBP2yNmKnqbYVzIGl0="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:89b5:1613:36f8:67fd:faa3
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·5"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "oCcKaqjJpMJagGBgj9h4YyOKnq4EHM1eF2phztJ3R0w="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8275:db2f:7a29:4b0b:3fd8
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "🇫🇮 fi.tribukvy:4500 ·5"
+    type: wireguard
+    server: tel.fi.tribukvy.ltd
+    port: 4500
+    private-key: "0Je/Ga3MVpMp7ZBkC5nXQNJo8P3PTiepYyL4E98pe1o="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8abf:5ec1:bb96:932a:8579
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.96.125:4500 ·3"
+    type: wireguard
+    server: 188.114.96.125
+    port: 4500
+    private-key: "uAxjUf8LCkatI6NeF9PIaFaqhfbRdHXFm2c79DLUEUY="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:800c:6a6c:d50f:d647:d7b8
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 188.114.96.125:4500 ·4"
+    type: wireguard
+    server: 188.114.96.125
+    port: 4500
+    private-key: "SAq11s5yaNavN58rUSWemyeyzyqyZqR0PlCcYfFRrV0="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8689:2fb7:b56b:6c5d:7e51
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·7"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "CChk7Ux+JzLHeXV1+oTfGadBODNNuUptclirhgQJH1Q="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:83d7:333b:8c06:9e8f:ae4f
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·8"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "mEMVY5rDp+Q6H6he3zrr5taORfIDJBAC1TC+tx+gA30="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8fd1:bb32:ad92:79a7:9f63
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·6"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "iFEtyxzIaS0CAaOotiv9+WLX/2+4epM3TZJ/IiN9KXQ="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:87e7:2539:808f:c080:10c5
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·7"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "CHMUgNE5//nbERwyFpxswtQ1QXAMxYkoAljFNyT3kGc="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:82b4:fda9:1629:14d2:7133
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 162.159.192.129:8854"
+    type: wireguard
+    server: 162.159.192.129
+    port: 8854
+    private-key: "SOsxJ37ksoKkoRGPcUzsLDrOTwipw2Ti4ygB9eNYX0g="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8a5c:6a8b:4f6e:a613:53ac
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇵🇱 pl.tribukvy:4500 ·9"
+    type: wireguard
+    server: tel.pl.tribukvy.ltd
+    port: 4500
+    private-key: "oCcJcZxaiA255nmsBZKyZjRyI0HhqvazK7h2Nyl92H4="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8104:b03d:7817:986e:8c5e
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ engage:2408 ·3"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    private-key: "0I0NryGggag2WQQLfmZpIk4NdA7uPx2K+unrOD/B4nw="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8f72:4bb0:e0db:4c8d:892e
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·8"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "QLxouE5WGuDrHKw/VWSURyB+cxvNCpYHN179crDmj1Y="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8eb2:db79:f2b4:f4df:4c1c
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 8.34.70.225:3476"
+    type: wireguard
+    server: 8.34.70.225
+    port: 3476
+    private-key: "ANPIo83DHy7gJ5bTiCROHRro4n2KU0x5WSWcQuLxD30="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8e5d:739d:89c2:dc7c:aac8
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.97.10:908"
+    type: wireguard
+    server: 188.114.97.10
+    port: 908
+    private-key: "ELpCVcKIwHVsBfYGecxfyzCZb8cZZk3SRBSnY0s4elM="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8fc7:fca3:29ac:e2e7:edf3
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 8.39.125.144:1843"
+    type: wireguard
+    server: 8.39.125.144
+    port: 1843
+    private-key: "4O/AIKzUc8o8wdD8KylY7rt+eSbsuDohuDSQwXhN4VM="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:803a:1450:9a34:41b7:967f
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ engage:987"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 987
+    private-key: "kHtkJW71k0cITF/GR8UniNWc3Bp5DLqUsPRftqFwTHc="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8ff8:68c0:9a8d:a54e:b988
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·9"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "eJDKBTlMyy3XuPKn+NApG4Y2CMYtmTr5LojcQDIumks="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:843a:bb73:f8d4:21a0:9e80
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 162.159.195.1:500 ·3"
+    type: wireguard
+    server: 162.159.195.1
+    port: 500
+    private-key: "eFsaICp7j8I8X8HLl6CxVPG06fhXeNmoLBWYPmTLq1c="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8e92:e939:a131:b3f:b8a0
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 188.114.97.176:908"
+    type: wireguard
+    server: 188.114.97.176
+    port: 908
+    private-key: "qFU/+G/U7bGklvIHspUWfF/lqyGcZrm4fXxe0f9asFY="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8c75:fb77:ae1c:cf11:391d
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
+
+  - name: "☁️ 188.114.97.66:4500 ·3"
+    type: wireguard
+    server: 188.114.97.66
+    port: 4500
+    private-key: "4M51/VygwcepSxyuj/0nqcCtAe4E5kbiLko4K1B0Ak4="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:89b8:baeb:3423:c52:e703
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ engage:864"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 864
+    private-key: "SNLzVKzEhLnWuf+JLb1HrLaAWDhupi19SRzGRi9OT1M="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:85f7:c131:9492:9dd0:242f
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "🇩🇪 de.tribukvy:4500 ·10"
+    type: wireguard
+    server: tel.de.tribukvy.ltd
+    port: 4500
+    private-key: "yN6kDCuxRoLtLNkvJZf7DLyGgdodev/TPUhWUhJcPWU="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8abe:3cc9:84ac:51c8:6fde
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg1
+
+  - name: "☁️ 162.159.195.232:864"
+    type: wireguard
+    server: 162.159.195.232
+    port: 864
+    private-key: "iAoJnsagygEH1h8gkKt52h0gewQDqKW/1s/VYPZHFWE="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    udp: true
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:82e0:8212:c28e:a323:7972
+    allowed-ips:
+      - '0.0.0.0/0'
+      - '::/0'
+    mtu: 1280
+    persistent-keepalive: 25
+    amnezia-wg-option: *awg2
 
