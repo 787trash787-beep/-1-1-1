@@ -1,5 +1,4 @@
 # WARP subscription — собрано build_warp.py из 56 конфигов
-# Правь confs/ и пересобирай; этот файл руками не редактируется.
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -11,8 +10,74 @@ profile:
   store-fake-ip: true
 
 proxy-groups:
-  - name: "🚀 Сервер"
+  - name: "⚡️ Авто (быстрейший)"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "☁️ 8.47.69.52:4177"
+      - "🇩🇪 de.tribukvy:4500"
+      - "☁️ 188.114.97.66:4500"
+      - "☁️ engage:500"
+      - "☁️ 162.159.195.1:500"
+      - "☁️ 162.159.195.179:4500"
+      - "☁️ engage:2408"
+      - "🇵🇱 pl.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·2"
+      - "☁️ 188.114.97.66:4500 ·2"
+      - "🇫🇮 fi.tribukvy:4500"
+      - "🇩🇪 de.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·2"
+      - "☁️ 8.35.211.211:890"
+      - "🇩🇪 de.tribukvy:4500 ·4"
+      - "☁️ 188.114.98.32:1180"
+      - "☁️ 8.39.204.116:894"
+      - "🇫🇮 fi.tribukvy:4500 ·2"
+      - "☁️ 162.159.195.251:5956"
+      - "☁️ engage:1387"
+      - "🇫🇮 fi.tribukvy:4500 ·3"
+      - "☁️ 188.114.97.132:1074"
+      - "☁️ 162.159.195.96:890"
+      - "🇵🇱 pl.tribukvy:4500 ·3"
+      - "🇵🇱 pl.tribukvy:4500 ·4"
+      - "☁️ 188.114.96.125:4500"
+      - "☁️ 8.39.125.59:1843"
+      - "☁️ engage:2408 ·2"
+      - "🇫🇮 fi.tribukvy:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·5"
+      - "🇵🇱 pl.tribukvy:4500 ·6"
+      - "☁️ 162.159.195.1:500 ·2"
+      - "☁️ 188.114.96.125:4500 ·2"
+      - "🇩🇪 de.tribukvy:4500 ·5"
+      - "🇫🇮 fi.tribukvy:4500 ·5"
+      - "☁️ 188.114.96.125:4500 ·3"
+      - "☁️ 188.114.96.125:4500 ·4"
+      - "🇵🇱 pl.tribukvy:4500 ·7"
+      - "🇵🇱 pl.tribukvy:4500 ·8"
+      - "🇩🇪 de.tribukvy:4500 ·6"
+      - "🇩🇪 de.tribukvy:4500 ·7"
+      - "☁️ 162.159.192.129:8854"
+      - "🇵🇱 pl.tribukvy:4500 ·9"
+      - "☁️ engage:2408 ·3"
+      - "🇩🇪 de.tribukvy:4500 ·8"
+      - "☁️ 8.34.70.225:3476"
+      - "☁️ 188.114.97.10:908"
+      - "☁️ 8.39.125.144:1843"
+      - "☁️ engage:987"
+      - "🇩🇪 de.tribukvy:4500 ·9"
+      - "☁️ 162.159.195.1:500 ·3"
+      - "☁️ 188.114.97.176:908"
+      - "☁️ 188.114.97.66:4500 ·3"
+      - "☁️ engage:864"
+      - "🇩🇪 de.tribukvy:4500 ·10"
+      - "☁️ 162.159.195.232:864"
+
+  - name: "🚀 Основной"
     type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
     proxies:
       - "⚡️ Авто (быстрейший)"
       - "☁️ 8.47.69.52:4177"
@@ -71,14 +136,12 @@ proxy-groups:
       - "☁️ engage:864"
       - "🇩🇪 de.tribukvy:4500 ·10"
       - "☁️ 162.159.195.232:864"
-      - DIRECT
 
-  - name: "⚡️ Авто (быстрейший)"
-    type: url-test
+  - name: "📺 YouTube"
+    type: load-balance
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    lazy: true
+    strategy: consistent-hashing
     proxies:
       - "☁️ 8.47.69.52:4177"
       - "🇩🇪 de.tribukvy:4500"
@@ -202,7 +265,16 @@ proxy-groups:
       - "☁️ 162.159.195.232:864"
 
 rules:
-  - MATCH,🚀 Сервер
+  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubei.googleapis.com,📺 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
+  - DOMAIN-SUFFIX,ggpht.com,📺 YouTube
+  - DOMAIN-SUFFIX,yt3.ggpht.com,📺 YouTube
+  - DOMAIN-KEYWORD,youtube,📺 YouTube
+  - MATCH,🚀 Основной
 
 proxies:
   - name: "☁️ 8.47.69.52:4177"
