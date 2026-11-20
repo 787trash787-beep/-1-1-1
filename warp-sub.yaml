@@ -1,4 +1,5 @@
-# WARP subscription — обновляется правкой этого файла на GitHub
+# WARP subscription
+# Обновление: правка этого файла на GitHub → клиенты перечитывают тот же URL
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -10,79 +11,195 @@ profile:
   store-fake-ip: true
 
 proxy-groups:
-  - name: "⚡️ WARP авто"
+  - name: "🚀 Сервер"
+    type: select
+    proxies:
+      - "⚡️ Авто (быстрейший)"
+      - "WARP-01 🇵🇱 pl.tribukvy:4500"
+      - "WARP-02 🇩🇪 de.tribukvy:4500"
+      - "WARP-03 🇫🇮 fi.tribukvy:4500"
+      - "WARP-04 🇩🇪 de.tribukvy:4500"
+      - "WARP-05 🇵🇱 pl.tribukvy:4500"
+      - "WARP-06 🇩🇪 de.tribukvy:4500"
+      - "WARP-07 🇫🇮 fi.tribukvy:4500"
+      - "WARP-08 🇫🇮 fi.tribukvy:4500"
+      - "WARP-09 🇵🇱 pl.tribukvy:4500"
+      - "WARP-10 🇵🇱 pl.tribukvy:4500"
+      - "WARP-11 🇫🇮 fi.tribukvy:4500"
+      - "WARP-12 🇵🇱 pl.tribukvy:4500"
+      - "WARP-13 🇵🇱 pl.tribukvy:4500"
+      - "WARP-14 🇩🇪 de.tribukvy:4500"
+      - "WARP-15 🇫🇮 fi.tribukvy:4500"
+      - "WARP-16 🇵🇱 pl.tribukvy:4500"
+      - "WARP-17 🇵🇱 pl.tribukvy:4500"
+      - "WARP-18 🇩🇪 de.tribukvy:4500"
+      - "WARP-19 🇩🇪 de.tribukvy:4500"
+      - "WARP-20 🇵🇱 pl.tribukvy:4500"
+      - "WARP-21 🇩🇪 de.tribukvy:4500"
+      - "WARP-22 🇩🇪 de.tribukvy:4500"
+      - "WARP-23 🇩🇪 de.tribukvy:4500"
+      - "WARP-24 ☁️ engage:500"
+      - "WARP-25 ☁️ 162.159.195.1:500"
+      - "WARP-26 ☁️ 162.159.195.179:4500"
+      - "WARP-27 ☁️ engage:2408"
+      - "WARP-28 ☁️ 188.114.97.66:4500"
+      - "WARP-29 ☁️ 8.35.211.211:890"
+      - "WARP-30 ☁️ 188.114.98.32:1180"
+      - "WARP-31 ☁️ 8.39.204.116:894"
+      - "WARP-32 ☁️ 162.159.195.251:5956"
+      - "WARP-33 ☁️ engage:1387"
+      - "WARP-34 ☁️ 188.114.97.132:1074"
+      - "WARP-35 ☁️ 162.159.195.96:890"
+      - "WARP-36 ☁️ 188.114.96.125:4500"
+      - "WARP-37 ☁️ 8.39.125.59:1843"
+      - "WARP-38 ☁️ engage:2408"
+      - "WARP-39 ☁️ 162.159.195.1:500"
+      - "WARP-40 ☁️ 188.114.96.125:4500"
+      - "WARP-41 ☁️ 188.114.96.125:4500"
+      - "WARP-42 ☁️ 188.114.96.125:4500"
+      - "WARP-43 ☁️ 162.159.192.129:8854"
+      - "WARP-44 ☁️ engage:2408"
+      - "WARP-45 ☁️ 8.34.70.225:3476"
+      - "WARP-46 ☁️ 188.114.97.10:908"
+      - "WARP-47 ☁️ 8.39.125.144:1843"
+      - "WARP-48 ☁️ engage:987"
+      - "WARP-49 ☁️ 162.159.195.1:500"
+      - "WARP-50 ☁️ 188.114.97.176:908"
+      - "WARP-51 ☁️ 188.114.97.66:4500"
+      - "WARP-52 ☁️ engage:864"
+      - "WARP-53 ☁️ 162.159.195.232:864"
+      - "WARP-54 ☁️ 188.114.97.66:4500"
+      - DIRECT
+
+  - name: "⚡️ Авто (быстрейший)"
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     lazy: true
     proxies:
-      - "WARP-01 tel.pl.tribukvy.ltd:4500"
-      - "WARP-02 tel.de.tribukvy.ltd:4500"
-      - "WARP-03 tel.fi.tribukvy.ltd:4500"
-      - "WARP-04 tel.de.tribukvy.ltd:4500"
-      - "WARP-05 tel.pl.tribukvy.ltd:4500"
-      - "WARP-06 tel.de.tribukvy.ltd:4500"
-      - "WARP-07 tel.fi.tribukvy.ltd:4500"
-      - "WARP-08 tel.fi.tribukvy.ltd:4500"
-      - "WARP-09 tel.pl.tribukvy.ltd:4500"
-      - "WARP-10 tel.pl.tribukvy.ltd:4500"
-      - "WARP-11 tel.fi.tribukvy.ltd:4500"
-      - "WARP-12 tel.pl.tribukvy.ltd:4500"
-      - "WARP-13 tel.pl.tribukvy.ltd:4500"
-      - "WARP-14 tel.de.tribukvy.ltd:4500"
-      - "WARP-15 tel.fi.tribukvy.ltd:4500"
-      - "WARP-16 tel.pl.tribukvy.ltd:4500"
-      - "WARP-17 tel.pl.tribukvy.ltd:4500"
-      - "WARP-18 tel.de.tribukvy.ltd:4500"
-      - "WARP-19 tel.de.tribukvy.ltd:4500"
-      - "WARP-20 tel.pl.tribukvy.ltd:4500"
-      - "WARP-21 tel.de.tribukvy.ltd:4500"
-      - "WARP-22 tel.de.tribukvy.ltd:4500"
-      - "WARP-23 tel.de.tribukvy.ltd:4500"
-      - "WARP-24 engage.cloudflareclient.com:500"
-      - "WARP-25 162.159.195.1:500"
-      - "WARP-26 162.159.195.179:4500"
-      - "WARP-27 engage.cloudflareclient.com:2408"
-      - "WARP-28 188.114.97.66:4500"
-      - "WARP-29 8.35.211.211:890"
-      - "WARP-30 188.114.98.32:1180"
-      - "WARP-31 8.39.204.116:894"
-      - "WARP-32 162.159.195.251:5956"
-      - "WARP-33 engage.cloudflareclient.com:1387"
-      - "WARP-34 188.114.97.132:1074"
-      - "WARP-35 162.159.195.96:890"
-      - "WARP-36 188.114.96.125:4500"
-      - "WARP-37 8.39.125.59:1843"
-      - "WARP-38 engage.cloudflareclient.com:2408"
-      - "WARP-39 162.159.195.1:500"
-      - "WARP-40 188.114.96.125:4500"
-      - "WARP-41 188.114.96.125:4500"
-      - "WARP-42 188.114.96.125:4500"
-      - "WARP-43 162.159.192.129:8854"
-      - "WARP-44 engage.cloudflareclient.com:2408"
-      - "WARP-45 8.34.70.225:3476"
-      - "WARP-46 188.114.97.10:908"
-      - "WARP-47 8.39.125.144:1843"
-      - "WARP-48 engage.cloudflareclient.com:987"
-      - "WARP-49 162.159.195.1:500"
-      - "WARP-50 188.114.97.176:908"
-      - "WARP-51 188.114.97.66:4500"
-      - "WARP-52 engage.cloudflareclient.com:864"
-      - "WARP-53 162.159.195.232:864"
-      - "WARP-54 188.114.97.66:4500"
+      - "WARP-01 🇵🇱 pl.tribukvy:4500"
+      - "WARP-02 🇩🇪 de.tribukvy:4500"
+      - "WARP-03 🇫🇮 fi.tribukvy:4500"
+      - "WARP-04 🇩🇪 de.tribukvy:4500"
+      - "WARP-05 🇵🇱 pl.tribukvy:4500"
+      - "WARP-06 🇩🇪 de.tribukvy:4500"
+      - "WARP-07 🇫🇮 fi.tribukvy:4500"
+      - "WARP-08 🇫🇮 fi.tribukvy:4500"
+      - "WARP-09 🇵🇱 pl.tribukvy:4500"
+      - "WARP-10 🇵🇱 pl.tribukvy:4500"
+      - "WARP-11 🇫🇮 fi.tribukvy:4500"
+      - "WARP-12 🇵🇱 pl.tribukvy:4500"
+      - "WARP-13 🇵🇱 pl.tribukvy:4500"
+      - "WARP-14 🇩🇪 de.tribukvy:4500"
+      - "WARP-15 🇫🇮 fi.tribukvy:4500"
+      - "WARP-16 🇵🇱 pl.tribukvy:4500"
+      - "WARP-17 🇵🇱 pl.tribukvy:4500"
+      - "WARP-18 🇩🇪 de.tribukvy:4500"
+      - "WARP-19 🇩🇪 de.tribukvy:4500"
+      - "WARP-20 🇵🇱 pl.tribukvy:4500"
+      - "WARP-21 🇩🇪 de.tribukvy:4500"
+      - "WARP-22 🇩🇪 de.tribukvy:4500"
+      - "WARP-23 🇩🇪 de.tribukvy:4500"
+      - "WARP-24 ☁️ engage:500"
+      - "WARP-25 ☁️ 162.159.195.1:500"
+      - "WARP-26 ☁️ 162.159.195.179:4500"
+      - "WARP-27 ☁️ engage:2408"
+      - "WARP-28 ☁️ 188.114.97.66:4500"
+      - "WARP-29 ☁️ 8.35.211.211:890"
+      - "WARP-30 ☁️ 188.114.98.32:1180"
+      - "WARP-31 ☁️ 8.39.204.116:894"
+      - "WARP-32 ☁️ 162.159.195.251:5956"
+      - "WARP-33 ☁️ engage:1387"
+      - "WARP-34 ☁️ 188.114.97.132:1074"
+      - "WARP-35 ☁️ 162.159.195.96:890"
+      - "WARP-36 ☁️ 188.114.96.125:4500"
+      - "WARP-37 ☁️ 8.39.125.59:1843"
+      - "WARP-38 ☁️ engage:2408"
+      - "WARP-39 ☁️ 162.159.195.1:500"
+      - "WARP-40 ☁️ 188.114.96.125:4500"
+      - "WARP-41 ☁️ 188.114.96.125:4500"
+      - "WARP-42 ☁️ 188.114.96.125:4500"
+      - "WARP-43 ☁️ 162.159.192.129:8854"
+      - "WARP-44 ☁️ engage:2408"
+      - "WARP-45 ☁️ 8.34.70.225:3476"
+      - "WARP-46 ☁️ 188.114.97.10:908"
+      - "WARP-47 ☁️ 8.39.125.144:1843"
+      - "WARP-48 ☁️ engage:987"
+      - "WARP-49 ☁️ 162.159.195.1:500"
+      - "WARP-50 ☁️ 188.114.97.176:908"
+      - "WARP-51 ☁️ 188.114.97.66:4500"
+      - "WARP-52 ☁️ engage:864"
+      - "WARP-53 ☁️ 162.159.195.232:864"
+      - "WARP-54 ☁️ 188.114.97.66:4500"
 
-  - name: "🚀 Прокси"
-    type: select
+  - name: "📊 Тест всех"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 1800
+    tolerance: 0
+    lazy: true
     proxies:
-      - "⚡️ WARP авто"
-      - DIRECT
+      - "WARP-01 🇵🇱 pl.tribukvy:4500"
+      - "WARP-02 🇩🇪 de.tribukvy:4500"
+      - "WARP-03 🇫🇮 fi.tribukvy:4500"
+      - "WARP-04 🇩🇪 de.tribukvy:4500"
+      - "WARP-05 🇵🇱 pl.tribukvy:4500"
+      - "WARP-06 🇩🇪 de.tribukvy:4500"
+      - "WARP-07 🇫🇮 fi.tribukvy:4500"
+      - "WARP-08 🇫🇮 fi.tribukvy:4500"
+      - "WARP-09 🇵🇱 pl.tribukvy:4500"
+      - "WARP-10 🇵🇱 pl.tribukvy:4500"
+      - "WARP-11 🇫🇮 fi.tribukvy:4500"
+      - "WARP-12 🇵🇱 pl.tribukvy:4500"
+      - "WARP-13 🇵🇱 pl.tribukvy:4500"
+      - "WARP-14 🇩🇪 de.tribukvy:4500"
+      - "WARP-15 🇫🇮 fi.tribukvy:4500"
+      - "WARP-16 🇵🇱 pl.tribukvy:4500"
+      - "WARP-17 🇵🇱 pl.tribukvy:4500"
+      - "WARP-18 🇩🇪 de.tribukvy:4500"
+      - "WARP-19 🇩🇪 de.tribukvy:4500"
+      - "WARP-20 🇵🇱 pl.tribukvy:4500"
+      - "WARP-21 🇩🇪 de.tribukvy:4500"
+      - "WARP-22 🇩🇪 de.tribukvy:4500"
+      - "WARP-23 🇩🇪 de.tribukvy:4500"
+      - "WARP-24 ☁️ engage:500"
+      - "WARP-25 ☁️ 162.159.195.1:500"
+      - "WARP-26 ☁️ 162.159.195.179:4500"
+      - "WARP-27 ☁️ engage:2408"
+      - "WARP-28 ☁️ 188.114.97.66:4500"
+      - "WARP-29 ☁️ 8.35.211.211:890"
+      - "WARP-30 ☁️ 188.114.98.32:1180"
+      - "WARP-31 ☁️ 8.39.204.116:894"
+      - "WARP-32 ☁️ 162.159.195.251:5956"
+      - "WARP-33 ☁️ engage:1387"
+      - "WARP-34 ☁️ 188.114.97.132:1074"
+      - "WARP-35 ☁️ 162.159.195.96:890"
+      - "WARP-36 ☁️ 188.114.96.125:4500"
+      - "WARP-37 ☁️ 8.39.125.59:1843"
+      - "WARP-38 ☁️ engage:2408"
+      - "WARP-39 ☁️ 162.159.195.1:500"
+      - "WARP-40 ☁️ 188.114.96.125:4500"
+      - "WARP-41 ☁️ 188.114.96.125:4500"
+      - "WARP-42 ☁️ 188.114.96.125:4500"
+      - "WARP-43 ☁️ 162.159.192.129:8854"
+      - "WARP-44 ☁️ engage:2408"
+      - "WARP-45 ☁️ 8.34.70.225:3476"
+      - "WARP-46 ☁️ 188.114.97.10:908"
+      - "WARP-47 ☁️ 8.39.125.144:1843"
+      - "WARP-48 ☁️ engage:987"
+      - "WARP-49 ☁️ 162.159.195.1:500"
+      - "WARP-50 ☁️ 188.114.97.176:908"
+      - "WARP-51 ☁️ 188.114.97.66:4500"
+      - "WARP-52 ☁️ engage:864"
+      - "WARP-53 ☁️ 162.159.195.232:864"
+      - "WARP-54 ☁️ 188.114.97.66:4500"
 
 rules:
-  - MATCH,🚀 Прокси
+  - MATCH,🚀 Сервер
 
 proxies:
-  - name: "WARP-01 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-01 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -109,7 +226,7 @@ proxies:
      i1: "<b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>"
 
 
-  - name: "WARP-02 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-02 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -125,7 +242,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-03 tel.fi.tribukvy.ltd:4500"
+  - name: "WARP-03 🇫🇮 fi.tribukvy:4500"
     type: wireguard
     server: tel.fi.tribukvy.ltd
     port: 4500
@@ -141,7 +258,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-04 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-04 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -157,7 +274,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-05 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-05 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -173,7 +290,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-06 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-06 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -189,7 +306,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-07 tel.fi.tribukvy.ltd:4500"
+  - name: "WARP-07 🇫🇮 fi.tribukvy:4500"
     type: wireguard
     server: tel.fi.tribukvy.ltd
     port: 4500
@@ -205,7 +322,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-08 tel.fi.tribukvy.ltd:4500"
+  - name: "WARP-08 🇫🇮 fi.tribukvy:4500"
     type: wireguard
     server: tel.fi.tribukvy.ltd
     port: 4500
@@ -221,7 +338,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-09 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-09 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -237,7 +354,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-10 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-10 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -253,7 +370,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-11 tel.fi.tribukvy.ltd:4500"
+  - name: "WARP-11 🇫🇮 fi.tribukvy:4500"
     type: wireguard
     server: tel.fi.tribukvy.ltd
     port: 4500
@@ -269,7 +386,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-12 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-12 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -285,7 +402,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-13 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-13 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -301,7 +418,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-14 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-14 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -317,7 +434,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-15 tel.fi.tribukvy.ltd:4500"
+  - name: "WARP-15 🇫🇮 fi.tribukvy:4500"
     type: wireguard
     server: tel.fi.tribukvy.ltd
     port: 4500
@@ -333,7 +450,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-16 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-16 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -349,7 +466,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-17 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-17 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -365,7 +482,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-18 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-18 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -381,7 +498,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-19 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-19 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -397,7 +514,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-20 tel.pl.tribukvy.ltd:4500"
+  - name: "WARP-20 🇵🇱 pl.tribukvy:4500"
     type: wireguard
     server: tel.pl.tribukvy.ltd
     port: 4500
@@ -413,7 +530,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-21 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-21 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -429,7 +546,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-22 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-22 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -445,7 +562,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-23 tel.de.tribukvy.ltd:4500"
+  - name: "WARP-23 🇩🇪 de.tribukvy:4500"
     type: wireguard
     server: tel.de.tribukvy.ltd
     port: 4500
@@ -461,7 +578,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-24 engage.cloudflareclient.com:500"
+  - name: "WARP-24 ☁️ engage:500"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 500
@@ -477,7 +594,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-25 162.159.195.1:500"
+  - name: "WARP-25 ☁️ 162.159.195.1:500"
     type: wireguard
     server: 162.159.195.1
     port: 500
@@ -493,7 +610,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-26 162.159.195.179:4500"
+  - name: "WARP-26 ☁️ 162.159.195.179:4500"
     type: wireguard
     server: 162.159.195.179
     port: 4500
@@ -509,7 +626,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-27 engage.cloudflareclient.com:2408"
+  - name: "WARP-27 ☁️ engage:2408"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 2408
@@ -525,7 +642,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-28 188.114.97.66:4500"
+  - name: "WARP-28 ☁️ 188.114.97.66:4500"
     type: wireguard
     server: 188.114.97.66
     port: 4500
@@ -541,7 +658,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-29 8.35.211.211:890"
+  - name: "WARP-29 ☁️ 8.35.211.211:890"
     type: wireguard
     server: 8.35.211.211
     port: 890
@@ -557,7 +674,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-30 188.114.98.32:1180"
+  - name: "WARP-30 ☁️ 188.114.98.32:1180"
     type: wireguard
     server: 188.114.98.32
     port: 1180
@@ -573,7 +690,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-31 8.39.204.116:894"
+  - name: "WARP-31 ☁️ 8.39.204.116:894"
     type: wireguard
     server: 8.39.204.116
     port: 894
@@ -589,7 +706,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-32 162.159.195.251:5956"
+  - name: "WARP-32 ☁️ 162.159.195.251:5956"
     type: wireguard
     server: 162.159.195.251
     port: 5956
@@ -605,7 +722,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-33 engage.cloudflareclient.com:1387"
+  - name: "WARP-33 ☁️ engage:1387"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 1387
@@ -621,7 +738,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-34 188.114.97.132:1074"
+  - name: "WARP-34 ☁️ 188.114.97.132:1074"
     type: wireguard
     server: 188.114.97.132
     port: 1074
@@ -637,7 +754,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-35 162.159.195.96:890"
+  - name: "WARP-35 ☁️ 162.159.195.96:890"
     type: wireguard
     server: 162.159.195.96
     port: 890
@@ -653,7 +770,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-36 188.114.96.125:4500"
+  - name: "WARP-36 ☁️ 188.114.96.125:4500"
     type: wireguard
     server: 188.114.96.125
     port: 4500
@@ -669,7 +786,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-37 8.39.125.59:1843"
+  - name: "WARP-37 ☁️ 8.39.125.59:1843"
     type: wireguard
     server: 8.39.125.59
     port: 1843
@@ -685,7 +802,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-38 engage.cloudflareclient.com:2408"
+  - name: "WARP-38 ☁️ engage:2408"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 2408
@@ -701,7 +818,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-39 162.159.195.1:500"
+  - name: "WARP-39 ☁️ 162.159.195.1:500"
     type: wireguard
     server: 162.159.195.1
     port: 500
@@ -717,7 +834,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-40 188.114.96.125:4500"
+  - name: "WARP-40 ☁️ 188.114.96.125:4500"
     type: wireguard
     server: 188.114.96.125
     port: 4500
@@ -733,7 +850,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-41 188.114.96.125:4500"
+  - name: "WARP-41 ☁️ 188.114.96.125:4500"
     type: wireguard
     server: 188.114.96.125
     port: 4500
@@ -749,7 +866,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-42 188.114.96.125:4500"
+  - name: "WARP-42 ☁️ 188.114.96.125:4500"
     type: wireguard
     server: 188.114.96.125
     port: 4500
@@ -765,7 +882,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-43 162.159.192.129:8854"
+  - name: "WARP-43 ☁️ 162.159.192.129:8854"
     type: wireguard
     server: 162.159.192.129
     port: 8854
@@ -781,7 +898,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-44 engage.cloudflareclient.com:2408"
+  - name: "WARP-44 ☁️ engage:2408"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 2408
@@ -797,7 +914,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-45 8.34.70.225:3476"
+  - name: "WARP-45 ☁️ 8.34.70.225:3476"
     type: wireguard
     server: 8.34.70.225
     port: 3476
@@ -813,7 +930,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-46 188.114.97.10:908"
+  - name: "WARP-46 ☁️ 188.114.97.10:908"
     type: wireguard
     server: 188.114.97.10
     port: 908
@@ -829,7 +946,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-47 8.39.125.144:1843"
+  - name: "WARP-47 ☁️ 8.39.125.144:1843"
     type: wireguard
     server: 8.39.125.144
     port: 1843
@@ -845,7 +962,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-48 engage.cloudflareclient.com:987"
+  - name: "WARP-48 ☁️ engage:987"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 987
@@ -861,7 +978,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-49 162.159.195.1:500"
+  - name: "WARP-49 ☁️ 162.159.195.1:500"
     type: wireguard
     server: 162.159.195.1
     port: 500
@@ -877,7 +994,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-50 188.114.97.176:908"
+  - name: "WARP-50 ☁️ 188.114.97.176:908"
     type: wireguard
     server: 188.114.97.176
     port: 908
@@ -893,7 +1010,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-51 188.114.97.66:4500"
+  - name: "WARP-51 ☁️ 188.114.97.66:4500"
     type: wireguard
     server: 188.114.97.66
     port: 4500
@@ -909,7 +1026,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-52 engage.cloudflareclient.com:864"
+  - name: "WARP-52 ☁️ engage:864"
     type: wireguard
     server: engage.cloudflareclient.com
     port: 864
@@ -925,7 +1042,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-53 162.159.195.232:864"
+  - name: "WARP-53 ☁️ 162.159.195.232:864"
     type: wireguard
     server: 162.159.195.232
     port: 864
@@ -941,7 +1058,7 @@ proxies:
     persistent-keepalive: 25
     amnezia-wg-option: *awg
 
-  - name: "WARP-54 188.114.97.66:4500"
+  - name: "WARP-54 ☁️ 188.114.97.66:4500"
     type: wireguard
     server: 188.114.97.66
     port: 4500
